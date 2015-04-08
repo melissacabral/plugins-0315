@@ -1,0 +1,31 @@
+#rad-announcement-bar{
+	background-color: #FC1DB0;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:.5em;
+	text-align: center;
+	color: white;
+}
+/*if admin bar is showing, push the rad bar down*/
+.admin-bar #rad-announcement-bar{
+	top:32px;
+}
+body{
+	margin-top:50px;
+}
+
+#rad-announcement-bar a{
+	background-color: black;
+	color:white;
+	padding:3px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 3px;
+}
+@media only screen and (max-width: 500px){
+ 	#rad-announcement-bar{
+ 		display: none;
+ 	}
+}
